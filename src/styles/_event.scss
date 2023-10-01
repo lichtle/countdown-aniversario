@@ -1,0 +1,48 @@
+.event {
+  padding: 80px 0;
+
+  &--dinner {
+    background-image: linear-gradient(#ffc0cb, #bdbdbd);
+  }
+
+  .container {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__details {
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: #000;
+    }
+
+    &__description {
+      line-height: 22px;
+      color: #000;
+    }
+  }
+
+  &__image {
+    max-width: 360px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      display: block;
+    }
+
+    &__details {
+      margin-bottom: 16px;
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+}

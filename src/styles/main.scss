@@ -1,0 +1,32 @@
+@use "hero";
+@use "event";
+@use "components/info-bar";
+@use "components/buttons";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 640px) {
+    max-width: 80%;
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 90%;
+  }
+}

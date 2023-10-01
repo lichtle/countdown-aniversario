@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown - Lichtle 2.5</title>
+    <link rel="stylesheet" href="styles/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <img
+          class="hero__logo"
+          src="images/profile.jpeg"
+          alt="Foto da Leticia"
+        />
+        <p class="hero__text" id="mensagem">
+          O aniversário da Lichtle é em
+          <span id="contador"></span>
+        </p>
+        <div class="info-bar">
+          <ul class="info-bar__infos">
+            <li class="info-bar__infos__item">
+              <span>Localização</span> Algum canto em São Paulo
+            </li>
+            <li class="info-bar__infos__item">
+              <span>Quando</span> 19/08/2024 às 19h
+            </li>
+          </ul>
+          <a class="button button--primary" href="#">Confirme sua presença</a>
+        </div>
+      </div>
+    </header>
+    <section class="event event--dinner">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__details__title">O que faremos para comemorar?</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+            dolorem in. Omnis laborum autem totam ab suscipit nemo reiciendis,
+            deleniti obcaecati sed magni fuga inventore aliquid atque voluptas
+            quod. Id!
+          </p>
+        </div>
+        <img
+          class="event__image"
+          src="images/burger.jpg"
+          alt="Foto de dois hambúrgueres"
+        />
+        <!-- https://www.freepik.com/free-photo/front-view-woman-eating-meat-burgers_9593137.htm#query=burger&position=7&from_view=search&track=sph -->
+      </div>
+    </section>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
